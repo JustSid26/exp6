@@ -4,5 +4,9 @@ app = Flask(__name__)
 def index():
     return "<h1>This is Siddharth Lama, COMP SCI</h1>"
 
+@app.route("/hobbies")
+def hobbies():
+    return "<p>tech, sketch, gym</p>"
+
 if __name__ == "__main__":
     app.run(host = "0.0.0.0", port = 8081, debug= True)
